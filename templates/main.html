@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <!--googl fonts-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+    <!--custom css-->
+    <link rel="stylesheet" type="text/css" href="static/css/default.css/" />
+
+    <title>Saroj Basnet</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+      <div class="container">
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="{%url 'home'%}"
+                >Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{%url 'posts'%}">Blogs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{%url 'about'%}">AboutMe</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    {% block content %}
+    <!-- Content goes here -->
+    {% endblock content %}
+    <footer class="page-footer font-small special-color-dark pt-4">
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">
+        © 2020-2021: Copyright:
+        <a href="#"> sarojbasnet.com.np</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+  </body>
+</html>

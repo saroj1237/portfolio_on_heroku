@@ -1,0 +1,161 @@
+{%extends 'main.html'%}
+{%load static%}
+{%block content%}
+
+<section class="s1">
+	<div class="main-container">
+		<div class="greeting-wrapper">
+			<h1>Celebrate Your Small Wins</h1>
+		</div>
+
+
+		<div class="intro-wrapper">
+			<!--navbar section-->
+			<div class="nav-wrapper">
+				<!-- Link around dots-wrapper added after tutorial video -->
+			  
+				<div class="dots-wrapper">
+				  <div id="dot-1" class="browser-dot"></div>
+				  <div id="dot-2" class="browser-dot"></div>
+				  <div id="dot-3" class="browser-dot"></div>
+				</div>
+			  
+				<div class="dots-wrapper">
+				  <div id="dot-1" class="browser-dot"></div>
+				  <div id="dot-2" class="browser-dot"></div>
+				  <div id="dot-3" class="browser-dot"></div>
+				</div>
+			  </div>
+			
+			<div class="left-column">
+				<img id="profile_pic" src="images/profile.jpg">
+				<h5 style="text-align: center;">Personalize Theme</h5>
+
+				<div id="theme-options-wrapper">
+					<div data-mode="light" id="light-mode" class="theme-dot"></div>
+					<div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+					<div data-mode="green" id="green-mode" class="theme-dot"></div>
+					<div data-mode="purple" id="purple-mode" class="theme-dot"></div>
+				</div>
+
+				<p id="settings-note">Hello, My name is Saroj Basnet.</br>Let me build your website and your 
+					mobile application.
+				</p>
+			</div>
+
+			<div class="right-column">
+
+				<div id="preview-shadow">
+					<div id="preview">
+						<div id="corner-tl" class="corner"></div>
+						<div id="corner-tr" class="corner"></div>
+						<h3>What I Do</h3>
+						<p>I am a Electronics and Communication Engineer, and I enjoy programming.</p>
+						<div id="corner-br" class="corner"></div>
+						<div id="corner-bl" class="corner"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="s2">
+	<div class="main-container">
+
+		<div class="about-wrapper">
+			<div class="about-me">
+				<h4 style="color: white;">More about me</h4>
+
+				<p style="color: #f5dcda;">I build new projects just to tickle my brain and love learning new ideas.</p>
+
+				<p style="color: #f5dcda;">While I keep busy coading courses, I still play football, play games, read</p>
+
+
+				<hr>
+
+				<h4 style="color: white;">TOP EXPERTISE</h4>
+
+				<p style="color: #f5dcda;">Primary focus on Django + React and Mobile App dev with flutter: <a href="#">Download Resume</a></p>
+
+				<div id="skills">
+					<ul>
+						<li>Python</li>
+						<li>Django</li>
+						<li>React</li>
+						<li>JavaScript</li>
+						<li>HTML/CSS</li>
+						<li>Bootstrap</li>
+					</ul>
+
+					<ul>
+						<li>Dart</li>
+						<li>Flutter</li>
+						<li>Firebase</li>
+						<li>Heroku</li>					
+					</ul>
+
+				</div>
+
+			</div>
+
+			
+			<div class="social-links">
+				<img id="social_img" src="static/images/social_media.jpg">
+				<h3 style="color: white;">Find me on Internet</h3>
+
+				<a target="_blank" href="https://www.facebook.com/gorkha.hss">facebook:Saroj Xettri </a>
+			
+				<a target="_blank" href="https://twitter.com/saroj1237">Twitter: @saroj1237</a>
+
+				<a target="_blank" href="https://www.instagram.com/saroj.basnet1237/?hl=en">instagram: @saroj.basnet1237</a>
+			</div>
+		</div>
+
+	</div>
+</section>
+
+<section class="s1">
+	<div class="main-container">
+		<h3 style="text-align: center;margin-top: 10px;">Some of my past projects</h3>
+
+		<div class="post-wrapper">
+
+			<div>
+				<div class="post">
+					<img class="thumbnail" src="static/images/raven.png">
+					<div class="post-preview">
+						<h6 class="post-title">Chautari 'Facebook-demo'</h6>
+						<p class="post-intro">Django Project with Create,Read,Update,Delete a post,message with users </p>
+						<a target="blank" href="https://github.com/saroj-sudo/Chautari-Messanger">Read More</a>
+					</div>
+				</div>
+			</div>
+
+			<div>
+				<div class="post">
+					<img class="thumbnail" src="static/images/django.png">
+					<div class="post-preview">
+						<h6 class="post-title">Django blog project</h6>
+						<p class="post-intro">Django project with authentication,Create,Read,Update,Delete a post and reset password service </p>
+						<a href="#">Read More</a>
+					</div>
+				</div>
+			</div>
+
+			<div>
+				<div class="post">
+					<img class="thumbnail" src="static/images/chatapp.png">
+					<div class="post-preview">
+						<h6 class="post-title">__Flash Chat App</h6>
+						<p class="post-intro">A realtime messanger App for android with firebase authentication, and storage 
+						</p>
+						<a target="blank" href="https://github.com/saroj-sudo/ChatAppWithFirebaseStorage">Read More</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</section>
+{%endblock%}

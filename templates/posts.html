@@ -1,0 +1,43 @@
+{%extends 'main.html'%} {%load static%}
+<!--blogs-->
+{%block content%} {%for post in posts%} {%if forloop.counter|divisibleby:2%}
+<div class="container mt-4">
+  <div class="row featurette d-flex justify-content-center align-items-center">
+    <div class="col-md-7 order-md-1">
+      <h2 class="featurette-heading">
+        {{post.headline}}
+        <span class="text-muted">{{post.sub_headline}}</span>
+      </h2>
+      <div class="mb-1 text-muted">{{post.created}}</div>
+      <p class="lead">{{post.body}}</p>
+    </div>
+    <div class="col-md-5 order-md-2">
+      <img
+        class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+        src="https://source.unsplash.com/500x500/?nepal,hindu"
+      />
+    </div>
+  </div>
+</div>
+{%else%}
+<div class="container mt-4">
+  <div class="row featurette d-flex justify-content-center align-items-center">
+    <div class="col-md-7 order-md-2">
+      <h2 class="featurette-heading">
+        {{post.headline}}
+        <span class="text-muted">{{post.sub_headline}}</span>
+      </h2>
+      <div class="mb-1 text-muted">{{post.created}}</div>
+      <p class="lead">{{post.body}}</p>
+    </div>
+    <div class="col-md-5 order-md-1">
+      <img
+        class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+        src="https://source.unsplash.com/500x500/?laptop,program"
+      />
+    </div>
+  </div>
+  {%endif%}
+</div>
+
+{%endfor%} {%endblock%}
