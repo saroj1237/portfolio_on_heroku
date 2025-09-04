@@ -1,8 +1,12 @@
 import os
 from pathlib import Path
+import portfolio.settings
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+
+
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 # Quick-start development settings - unsuitable for production
@@ -12,10 +16,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'aj)b^(_r80wgy1*_our&_ls@y#=y4grify8+gi3z&&=oa3d!g9'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['saroj1237.herokuapp.com']
-
+#ALLOWED_HOSTS = ['saroj1237.herokuapp.com']
+ALLOWED_HOSTS = []
 
 # Application definition
 
